@@ -1,0 +1,86 @@
+/**
+ * Style
+ * 
+ * @author Mário Sakamoto <mskamot@gmail.com>
+ * @license MIT http://www.opensource.org/licenses/MIT
+ * @see http://mariosakamoto.com/divmon
+ * @see http://mariosakamoto.com/flygon
+ */
+
+/*
+ * Reset
+ */
+html, body, div, span,
+table, tbody, tr, th, td,
+form, label, input, textarea, select, option, checkbox, button,
+ul, li,
+h1, h2, h3, h4, h5, h6, p,
+img,
+a { }
+
+body { }
+
+.border { 	border-bottom: solid 1px #757575;  }
+
+table { 
+	width: 600px;
+	border-bottom: solid 1px #757575; 
+}
+
+	tr { }
+
+		th { 
+			border-top: solid 1px #757575;
+			border-bottom: solid 1px #757575;
+			text-align: center;
+		}
+
+		td { text-align: center; }
+		
+form { }
+
+	label { }
+
+	input { }
+	
+	textarea { }
+
+	select { }
+	
+		option { }
+		
+	checkbox { }
+
+	button { }
+	
+ul { }
+
+	li { }
+	
+h1 { }
+
+h2 { }
+
+h3 { }
+
+h4 { }
+
+h5 { }
+
+h6 { }
+
+p { }
+
+img { }
+
+a { }
+
+span { }
+
+/**
+ * Id
+ */
+ 
+/*
+ * Class
+ */

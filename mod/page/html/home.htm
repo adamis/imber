@@ -1,0 +1,175 @@
+<!-- Home -->
+
+		<div class="dv-container dv-pt-xdpi dv-pb-xdpi blue-bg">
+		
+			<div class="dv-center">
+				
+				<div class="dv-content">
+				
+					<div class="dv-line">
+					
+						<div class="dv-column">
+						
+							<div class="dv-p-hdpi">
+							
+								<h2 class="white dv-mb-hdpi">Imber</h2>
+								
+								<h4 class="white dv-mb-hdpi">Sistema open source online para gerenciamento de 
+										estação meteorológica</h4>
+								
+								<a href="@_ROOT/sobre">
+
+									<div class="white-button dv-f-l dv-pt-mdpi dv-pr-hdpi dv-pb-mdpi dv-pl-hdpi">
+									
+										<p class="bold white">Saiba mais</p>
+									
+									</div>
+								
+								</a>
+								
+								<div class="dv-clear">
+								
+								</div>
+
+							</div>
+
+						</div>
+						
+						
+					</div>	
+
+				</div>		
+				
+			</div>
+			
+		</div>
+
+		<div class="dv-container dv-pt-xdpi dv-pb-xdpi">
+		
+			<div class="dv-center">
+				
+				<div class="dv-slide">
+				
+					<div class="dv-line">
+					
+						<div class="dv-column">
+						
+							<div class="dv-p-hdpi">
+							
+								<h3 class="dv-mb-hdpi">Últimas medições</h3>
+						
+								<h4>Lista de dados com as últimas medições realizadas</h4>
+	
+							</div>
+						
+						</div>
+						
+						<div class="dv-column">
+						
+							<div class="dv-p-hdpi">
+							
+								<table>
+								
+									<tr>
+									
+										<th class="bold">Data</th>
+										
+										<th class="bold">Altitude</th>
+										
+										<th class="bold">Umidade do ar</th>
+										
+										<th class="bold">Umidade do solo</th>
+										
+										<th class="bold">Temperatura</th>
+										
+										<th class="bold">Pressão atmosférica</th>
+										
+									</tr>
+									
+									<for(medicoes)>
+									
+										<tr>
+										
+											<td><gz>medicoes.data_hora</gz></td>
+											
+											<td><gz>medicoes.altura_mar</gz> m</td>
+											
+											<td><gz>medicoes.humidade_ar</gz>%</td>
+											
+											<td><gz>medicoes.humidade_solo</gz>%</td>
+											
+											<td><gz>medicoes.temperatura_ar</gz>ºC</td>
+											
+											<td><gz>medicoes.pressao_ar</gz> kPa</td>
+
+										</tr>
+									
+									</for>
+									
+								</table>
+	
+							</div>
+						
+						</div>	
+						
+					</div>	
+					
+				</div>				
+
+			</div>
+
+		</div>	
+		
+		<div class="dv-container dv-pt-xdpi dv-pb-xdpi gray-bg">
+		
+			<div class="dv-center">
+				
+				<div class="dv-content">
+				
+					<div class="dv-line">
+					
+						<div class="dv-column">
+						
+							<div class="dv-p-hdpi">
+							
+								<h3 class="dv-mb-hdpi">Para desenvolvedores</h3>
+								
+								<h4 class="dv-mb-hdpi">Consuma a nossa base de dados através de nossos 
+										serviços via web server</h4>
+										
+								<a href="@_ROOT/doc/Documentação para requisições de dados da base de dados do IMBER.pdf" target="_blank">
+
+									<div class="button dv-f-l dv-pt-mdpi dv-pr-hdpi dv-pb-mdpi dv-pl-hdpi">
+									
+										<p class="bold">Documentação</p>
+									
+									</div>
+								
+								</a>
+								
+								<a href="@_ROOT/form">
+
+									<div class="button dv-f-l dv-pt-mdpi dv-pr-hdpi dv-pb-mdpi dv-pl-hdpi dv-ml-hdpi">
+									
+										<p class="bold">Baixar dados para excel</p>
+									
+									</div>
+								
+								</a>
+								
+								<div class="dv-clear">
+								
+								</div>
+
+							</div>
+
+						</div>
+						
+						
+					</div>	
+
+				</div>		
+				
+			</div>
+			
+		</div>		

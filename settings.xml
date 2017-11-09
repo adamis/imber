@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Settings -->
+<settings>
+	<!-- Root -->
+	<package>imber</package>
+	
+	<!-- Connection -->
+	<connection>
+		<is_official>true</is_official>
+	</connection>
+</settings>

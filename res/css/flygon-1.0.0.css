@@ -1,0 +1,370 @@
+﻿/**
+ * Flygon 1.0.0
+ * 
+ * @author Mário Sakamoto <mskamot@gmail.com>
+ * @license MIT http://www.opensource.org/licenses/MIT
+ * @see http://mariosakamoto.com/flygon
+ * @since 2014-07-26
+ */
+
+/*
+ * Class
+ */
+.fg-no-bar { overflow-y: hidden; } 
+
+.fg-logo {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 2;
+}
+
+.fg-menu {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	z-index: 2;
+}
+
+.fg-info {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	z-index: 2;
+}
+
+.fg-copyright {
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	z-index: 2;
+}
+
+.fg-mark { background: url("../../res/img/ldpi/fg-white-go.png") no-repeat left; }
+
+/*
+ * Grid
+ */ 
+.fg-slide {
+	position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+} 
+
+	.fg-left {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+	}
+
+	.fg-right { 
+		position: absolute;
+		right: 0;
+		width: 50%;
+		height: 100%;
+	}
+	
+	.fg-center-left {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		-o-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		z-index: 1;
+	}
+
+	.fg-center {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+
+	.fg-center-right {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translate(100%, -50%);
+		-moz-transform: translate(100%, -50%);
+		-ms-transform: translate(100%, -50%);
+		-o-transform: translate(100%, -50%);
+		transform: translate(100%, -50%);
+		z-index: 1;
+	}
+
+/*
+ * Tooltip
+ */
+.fg-tooltip { outline:none; }
+		
+	.fg-tooltip span {
+		display: none; 
+		z-index: 10;
+		width: 130px; 
+		padding: 15px 15px;
+		background: #212121;
+	}
+	
+	.fg-tooltip:hover { text-decoration: none; } 
+	
+		.fg-tooltip:hover span{
+			position: absolute; 
+			display: inline; 
+			border-radius: 5px;
+			color: #fff;
+		}
+
+	.fg-span-top-right {
+		margin-top: -100px; 
+		margin-left: 40px;
+	}
+	
+	.fg-span-top-left {
+		margin-top: -60px; 
+		margin-left: -150px;
+	}
+	
+	.fg-span-bottom-right {
+		margin-top: 10px; 
+		margin-left: 40px;
+	}
+	
+	.fg-span-bottom-left {
+		margin-top: 70px; 
+		margin-left: -150px;
+	}
+	
+	.fg-span-right {
+		margin-top: 5px; 
+		margin-left: 50px;
+	}
+
+/*
+ * Button
+ */
+.fg-mobile {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-mobile.png") no-repeat center;
+}
+
+	.fg-mobile:hover { 
+		border: 1px solid #212121;
+		background: #212121 url("../../res/img/ldpi/fg-white-mobile.png") no-repeat center; 
+	}
+ 
+.fg-down {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-down.png") no-repeat center;
+}
+
+	.fg-down:hover { 
+		border: 1px solid #212121;
+		background: #212121 url("../../res/img/ldpi/fg-white-down.png") no-repeat center; 
+	}
+	
+.fg-white-down {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-white-down.png") no-repeat center;
+}
+
+	.fg-white-down:hover { background: #fff url("../../res/img/ldpi/fg-down.png") no-repeat center; }
+	
+.fg-top {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-top.png") no-repeat center;
+}
+
+	.fg-top:hover { background: #212121 url("../../res/img/ldpi/fg-white-top.png") no-repeat center; }
+	
+.fg-white-top {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-white-top.png") no-repeat center;
+}
+
+	.fg-white-top:hover { background: #fff url("../../res/img/ldpi/fg-top.png") no-repeat center; }	
+	
+.fg-go {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-go.png") no-repeat center;
+}
+
+	.fg-go:hover { background: #212121 url("../../res/img/ldpi/fg-white-go.png") no-repeat center; }
+	
+.fg-white-go {
+	margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-white-go.png") no-repeat center;
+}
+
+	.fg-white-go:hover { background: #fff url("../../res/img/ldpi/fg-go.png") no-repeat center; }	
+
+.fg-delete {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	z-index: 2;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-delete.png") no-repeat center;
+}
+
+	.fg-delete:hover { background: #212121 url("../../res/img/ldpi/fg-white-delete.png") no-repeat center; }
+	
+.fg-white-delete {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	z-index: 2;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-white-delete.png") no-repeat center;
+}
+
+	.fg-white-delete:hover { background: #fff url("../../res/img/ldpi/fg-delete.png") no-repeat center; }
+	
+.fg-create {
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	z-index: 2;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-create.png") no-repeat center;
+}
+
+	.fg-create:hover { background: #212121 url("../../res/img/ldpi/fg-white-create.png") no-repeat center; }
+	
+.fg-white-create {
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	z-index: 2;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-white-create.png") no-repeat center;
+}
+
+	.fg-white-create:hover { background: #fff url("../../res/img/ldpi/fg-create.png") no-repeat center; }	
+	
+.fg-photo {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-photo.png") no-repeat center;
+}
+
+	.fg-photo:hover { background: #212121 url("../../res/img/ldpi/fg-white-photo.png") no-repeat center; }
+	
+.fg-white-photo {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+	background: url("../../res/img/ldpi/fg-white-photo.png") no-repeat center;
+}
+
+	.fg-white-photo:hover { background: #fff url("../../res/img/ldpi/fg-photo.png") no-repeat center; }

@@ -1,0 +1,116 @@
+<!-- Screen View -->
+
+	<!-- Header -->
+
+	<div id="gz-header-screen" class="dv-f-l dv-mt-mdpi dv-pb-mdpi">
+
+		<!-- Create -->
+
+		<div id="gz-button-create" class="gz-button dv-f-l dv-mt-mdpi dv-mr-mdpi dv-mb-mdpi dv-ml-xdpi" 
+				onclick="target_blank('permissoes');">
+	
+			<a href="#" class="gz-tooltip" onclick="return false;">
+
+				<img src="@_ROOT/res/img/ldpi/create.png" />
+
+				<span class="gz-span-bottom-right @_THEME">
+
+					@_LAN_ADD
+
+				</span>
+
+			</a>
+
+		</div>	
+
+		<!-- Search -->
+
+		<input id="gz-search" class="gz-textbox-mdpi dv-f-l dv-mt-mdpi dv-mr-hdpi dv-mb-mdpi dv-ml-hdpi gz-gray" 
+				type="text" value="@_LAN_SEARCH_FOR"
+				onfocus="emptySearch(this.id);" onblur="showSearch(this.id);">
+
+		<div id="gz-button-search" class="gz-button dv-f-l dv-mt-mdpi" 
+				onclick="screenSearch();">
+
+			<a href="#" class="gz-tooltip" onclick="return false;">
+
+				<img src="@_ROOT/res/img/ldpi/search.png" />
+
+				<span class="gz-span-bottom-right @_THEME">
+
+					@_LAN_SEARCH
+
+				</span>
+
+			</a>
+
+		</div>
+
+		<!-- Close -->
+
+		<div class="gz-button dv-f-r dv-mt-mdpi dv-mr-xdpi" onclick="closeScreen();">
+
+			<a href="#" class="gz-tooltip" onclick="return false;">
+
+				<img src="@_ROOT/res/img/ldpi/cancel.png" />
+
+				<span class="gz-span-bottom-left @_THEME">
+
+					@_LAN_CLOSE
+
+				</span>
+
+			</a>
+
+		</div>
+
+	</div>
+	
+	<!-- Table -->
+	
+	<div class="dv-pl-xdpi dv-pr-xdpi">
+	
+		<p id="gz-title-screen" class="gz-gray dv-f-l">
+			
+			<one(titles)>
+			
+				<gz>menus.menu</gz> /
+				
+				<span class="gz-black gz-bold">
+				
+					<gz>telas.tela</gz>
+					
+				</span>
+				
+			</one>	
+				
+		</p>
+
+		<table id="gz-table-screen" class="dv-f-l">
+
+			<tr>
+
+				<th style="display:none;">Id</th>
+
+				<th style="width:100%;">Permissao</th>
+
+			</tr>
+
+			<for(permissoes)>
+
+				<tr id="<gz>permissoes.line</gz>" 
+						onMouseOver="onFocus(<gz>permissoes.line</gz>);" 
+						onMouseOut="outFocus(<gz>permissoes.line</gz>);" 
+						onClick="selected(<gz>permissoes.line</gz>);">
+
+					<td style="display:none;"><gz>permissoes.id</gz></td>
+
+					<td><gz>permissoes.permissao</gz></td>			
+					
+				</tr>
+
+			</for>
+
+		</table>
+	
+	</div>

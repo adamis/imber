@@ -1,0 +1,158 @@
+/**
+ * Style
+ * 
+ * @author Mário Sakamoto <mskamot@gmail.com>
+ * @license MIT http://www.opensource.org/licenses/MIT
+ * @see http://mariosakamoto.com/divmon
+ * @see http://mariosakamoto.com/flygon
+ */
+
+/*
+ * Reset
+ */
+html, body, div, span,
+table, tbody, tr, th, td,
+form, label, input, textarea, select, option, checkbox, button,
+ul, li,
+h1, h2, h3, h4, h5, h6, p,
+img,
+a { color: #212121; }
+
+body { }
+
+table { }
+
+	tr { }
+
+		th {
+			padding: 20px 20px;
+		}
+		
+		td { 
+			padding: 20px 20px;
+			border-top: solid 1px #eee;
+			font-size: 16px;
+			transition-duration: .3s;
+			-webkit-transition-duration: .3s;
+			-moz-transition-duration: .3s;
+		}
+		
+form { }
+
+	label { }
+
+	input { 
+		width: 100%;
+		border: solid 1px #bdbdbd;
+		border-radius: 10px;
+	}
+	
+		input[type=submit] {
+			width: 100%;
+			background-color: #039be5;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+	
+	textarea { }
+
+	select { }
+	
+		option { }
+		
+	checkbox { }
+
+	button { }
+	
+ul { }
+
+	li { }
+	
+h1 { }
+
+h2 { }
+
+h3 { }
+
+h4 { }
+
+h5 { }
+
+h6 { }
+
+p { }
+
+img { }
+
+a { }
+
+span { }
+
+/**
+ * Id
+ */
+
+/*
+ * Class
+ */
+.bold { font-weight: 700; }
+
+.radius { border-radius: 30px; } 
+ 
+/*
+ * Color
+ */ 
+.white { color: #fff; }
+
+/*
+ * Background
+ */
+.white-bg { background: #fff; }
+
+.gray-bg { background: #eee; }
+
+.blue-bg { background: #039be5; }
+
+.slide-bg {   
+	background: url(../img/slide.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*
+ * Button
+ */
+.white-button {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+}
+
+	.white-button:hover { background: #fff; }
+	
+	.white-button:hover p { color: #000; }
+	
+.button {
+    border: 1px solid #757575;
+    border-radius: 30px;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+	cursor: pointer;
+}
+
+	.button:hover { 
+		background: #039be5;
+		border: 1px solid #039be5;
+	}
+	
+	.button:hover p { color: #fff; }

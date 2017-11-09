@@ -1,0 +1,299 @@
+<div class="dv-container dv-pt-xdpi dv-pb-xdpi" style="border-top: solid 1px #dcdcdc;">
+		
+		<div class="dv-center">
+				
+			<!-- Altitude(Nivel do Mar) -->	
+			<div class="dv-slide">
+			
+				<div class="dv-line">
+			
+					<div class="dv-column">
+				
+						<div class="dv-p-mdpi">
+					
+							<h2 class="dv-mb-hdpi gz-bold ">Altitude(Nivel do Mar)</h1>
+					
+							<table class="gz-box">
+							
+								<tr>
+
+									<th>
+								
+										<script>
+
+										var altura_marl = [<for(altura_mar)><gz>altura_mar.subtotal</gz></for>];
+										var altura_marc = [<for(altura_mar)><gz>altura_mar.month</gz></for>];
+									
+										</script>
+								
+										Altitude nas últimas 12 horas
+									
+									</th>
+								
+								</tr>
+
+								<tr>
+
+									<td>
+
+										<div id="altura_marl" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+
+										<canvas id="altura_mar" style="display: block; margin: 0 auto;">
+										
+										</canvas>
+										
+										<div id="altura_marc" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+									
+									</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+					
+					</div>
+
+				</div>
+					
+					
+				<!-- Humidade do ar -->
+				
+				<div class="dv-line">
+			
+					<div class="dv-column">
+				
+						<div class="dv-p-mdpi">
+					
+							<h2 class="dv-mb-hdpi gz-bold ">Umidade do ar</h1>
+					
+							<table class="gz-box">
+							
+								<tr>
+
+									<th>
+								
+										<script>
+
+										var humidade_arl = [<for(humidade_ar)><gz>humidade_ar.subtotal</gz></for>];
+										var humidade_arc = [<for(humidade_ar)><gz>humidade_ar.month</gz></for>];
+									
+										</script>
+								
+										Umidade do Ar nas últimas 12 horas
+									
+									</th>
+								
+								</tr>
+
+								<tr>
+
+									<td>
+
+										<div id="humidade_arl" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+
+										<canvas id="humidade_ar" style="display: block; margin: 0 auto;">
+										
+										</canvas>
+										
+										<div id="humidade_arc" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+									
+									</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+					
+					</div>
+
+				</div>	
+				
+				<!-- Humidade do Solo -->
+				
+				<div class="dv-line">
+			
+					<div class="dv-column">
+				
+						<div class="dv-p-mdpi">
+					
+							<h2 class="dv-mb-hdpi gz-bold ">Umidade do Solo</h1>
+					
+							<table class="gz-box">
+							
+								<tr>
+
+									<th>
+								
+										<script>
+
+										var humidade_solol = [<for(humidade_solo)><gz>humidade_solo.subtotal</gz></for>];
+										var humidade_soloc = [<for(humidade_solo)><gz>humidade_solo.month</gz></for>];
+									
+										</script>
+								
+										Umidade do Solo nas últimas 12 horas
+									
+									</th>
+								
+								</tr>
+
+
+								<tr>
+
+									<td>
+
+										<div id="humidade_solol" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+
+										<canvas id="humidade_solo" style="display: block; margin: 0 auto;">
+										
+										</canvas>
+										
+										<div id="humidade_soloc" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+									
+									</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+					
+					</div>
+
+				</div>
+				
+				<!-- Pressao -->
+				
+				<div class="dv-line">
+			
+					<div class="dv-column">
+				
+						<div class="dv-p-mdpi">
+					
+							<h2 class="dv-mb-hdpi gz-bold ">Pressão Atmosferica(kPa)</h1>
+					
+							<table class="gz-box">
+							
+								<tr>
+
+									<th>
+								
+										<script>
+
+										var pressao_arl = [<for(pressao_ar)><gz>pressao_ar.subtotal</gz></for>];
+										var pressao_arc = [<for(pressao_ar)><gz>pressao_ar.month</gz></for>];
+									
+										</script>
+								
+										Pressão nas últimas 12 horas
+									
+									</th>
+								
+								</tr>
+
+								<tr>
+
+									<td>
+
+										<div id="pressao_arl" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+
+										<canvas id="pressao_ar" style="display: block; margin: 0 auto;">
+										
+										</canvas>
+										
+										<div id="pressao_arc" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+									
+									</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+					
+					</div>
+
+				</div>
+								
+					
+				<!-- Temperatura do ar -->
+				
+				<div class="dv-line">
+			
+					<div class="dv-column">
+				
+						<div class="dv-p-mdpi">
+					
+							<h2 class="dv-mb-hdpi gz-bold ">Temperatura do ar</h1>
+					
+							<table class="gz-box">
+							
+								<tr>
+
+									<th>
+								
+										<script>
+
+										var temperatura_arl = [<for(temperatura_ar)><gz>temperatura_ar.subtotal</gz></for>];
+										var temperatura_arc = [<for(temperatura_ar)><gz>temperatura_ar.month</gz></for>];
+									
+										</script>
+								
+										Temperatura do ar nas últimas 12 horas
+									
+									</th>
+								
+								</tr>
+
+								<tr>
+
+									<td>
+
+										<div id="temperatura_arl" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+
+										<canvas id="temperatura_ar" style="display: block; margin: 0 auto;">
+										
+										</canvas>
+										
+										<div id="temperatura_arc" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+									
+									</td>
+								
+								</tr>
+							
+							</table>
+						
+						</div>
+					
+					</div>
+
+				</div>	
+					
+					
+			</div>
+
+		</div>
+
+</div>

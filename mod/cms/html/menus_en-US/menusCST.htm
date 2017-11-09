@@ -1,0 +1,104 @@
+<!-- Custom View -->
+
+	<div id="gz-menu">
+	
+		<div class="dv-pt-hdpi dv-pr-xdpi dv-pb-hdpi dv-pl-xdpi">
+		
+			<div class="gz-profile-border">
+	
+				<for(usuarios)>
+				
+					<div class="gz-tooltip">
+
+						<img onclick="goToTable('mudar_foto');" id="gz-profile" class="@_THEME"
+							src="@_ROOT/res/img/mdpi/<gz>usuarios.foto</gz>" />
+
+						<span class="gz-span-profile @_THEME" onclick="goToTable('mudar_foto');">
+
+							@_LAN_CHANGE
+
+						</span>
+
+					</div>
+					
+				</for>
+				
+			</div>
+			
+		</div>
+
+		<ul>
+		
+			<li class="dv-mb-hdpi dv-ml-xdpi dv-mr-hdpi dv-pt-mdpi">
+			
+				<span class="gz-icon-chart" 
+						style="font-size: 12px; cursor: pointer; font-family: 'Open Sans', sans-serif; font-weight: 700;" 
+						onclick="goToTable('dashboard');">Dashboard</span>
+
+			</li>	
+			
+			<li class="dv-mb-hdpi dv-ml-xdpi dv-mr-hdpi dv-pt-mdpi">
+			
+				<span class="gz-icon-folder" 
+						style="font-size: 12px; cursor: pointer; font-family: 'Open Sans', sans-serif; font-weight: 700;" 
+						onclick="menuShow('gz-registrations');">Registrations</span>
+				
+				<ul id="gz-registrations" class="dv-mt-hdpi" style="display:none;">
+			
+					<for(registrations)>
+
+						<li id="gz-<gz>screens.identifier</gz>" class="dv-mr-hdpi dv-pt-mdpi dv-pb-mdpi dv-pl-hdpi <gz>screens.selected</gz>" 
+								onclick="goToTable('<gz>screens.identifier</gz>');">
+
+							<gz>screens.screen</gz>
+
+						</li>			
+	
+					</for>
+
+				</ul>
+
+			</li>
+
+			<li class="dv-mb-hdpi dv-ml-xdpi dv-pt-mdpi">
+			
+				<span class="gz-icon-configuration" 
+						style="font-size: 12px; cursor: pointer; font-family: 'Open Sans', sans-serif; font-weight: 700;" 
+						onclick="menuShow('gz-configurations');">Configurations</span>
+				
+				<ul id="gz-configurations" class="dv-mt-hdpi" style="display:none;">		
+				
+					<for(configurations)>
+
+						<li id="gz-<gz>screens.identifier</gz>" class="dv-mr-hdpi dv-pt-mdpi dv-pb-mdpi dv-pl-hdpi <gz>screens.selected</gz>" 
+								onclick="goToTable('<gz>screens.identifier</gz>');">
+
+							<gz>screens.tela</gz>
+
+						</li>			
+	
+					</for>
+					
+				</ul>
+			
+			</li>	
+			
+			<li class="dv-mb-hdpi dv-ml-xdpi dv-mr-hdpi dv-pt-mdpi">
+			
+				<span class="gz-icon-user" 
+						style="font-size: 12px; cursor: pointer; font-family: 'Open Sans', sans-serif; font-weight: 700;" 
+						onclick="goToTable('my_account');">My account</span>
+
+			</li>	
+			
+			<li class="dv-mb-hdpi dv-ml-xdpi dv-mr-hdpi dv-pt-mdpi">
+			
+				<span class="gz-icon-exit" 
+						style="font-size: 12px; cursor: pointer; font-family: 'Open Sans', sans-serif; font-weight: 700;" 
+						onclick="request('logout', 'logout');">Logout</span>
+
+			</li>	
+			
+		</ul>
+		
+	</div>

@@ -1,0 +1,68 @@
+<!-- Home -->	
+		
+		<div class="dv-container dv-pt-xdpi dv-pb-xdpi">
+		
+			<div class="dv-center">
+			
+				<div class="dv-slide">
+				
+					<div class="dv-line">
+				
+					<div class="dv-column">
+					
+						<div class="dv-p-mdpi">
+						
+							<h1 class="dv-mb-hdpi gz-bold dv-ta-c">Temperatura do ar</h1>
+						
+							<table class="gz-box">
+								
+								<tr>
+
+									<th>
+									
+										<script>
+
+											var temperaturas_diariasl = [<for(temperaturas_diarias)><gz>temperaturas_diarias.subtotal</gz></for>];
+											var temperaturas_diariasc = [<for(temperaturas_diarias)><gz>temperaturas_diarias.month</gz></for>];
+										
+										</script>
+									
+										Temperatura do ar nos últimos 12 meses
+										
+									</th>
+									
+								</tr>
+
+								<tr>
+
+									<td>
+
+										<div id="temperaturas_diariasl" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+
+										<canvas id="temperaturas_diarias" style="display: block; margin: 0 auto;">
+										
+										</canvas>
+										
+										<div id="temperaturas_diariasc" class="dv-pt-hdpi dv-pb-hdpi">
+											
+										</div>
+									
+									</td>
+									
+								</tr>
+								
+							</table>
+							
+						</div>
+					
+					</div>
+
+				</div>
+					
+				</div>
+
+			</div>
+
+		</div>
